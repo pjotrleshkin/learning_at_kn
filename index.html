@@ -1,0 +1,17 @@
+<div id="wrapper">
+
+</div>
+
+<script>
+//save a value
+localStorage.setItem("Domain", "https://www.learning.int.kn");
+//retrieve item
+var website= localStorage.getItem("Domain");
+//remove the key
+document.getElementById('wrapper').innerHTML = website;
+
+if(website === null){
+    document.getElementById('wrapper').innerHTML = "no domain localstorage found";
+}
+
+    </script>
